@@ -1,0 +1,24 @@
+<div class="create-link-container">
+  <h1>Free URL Shortener</h1>
+  <p>Sort URL is a free tool to shorten URLs. Create short & memorable links in seconds.</p>
+  <form (ngSubmit)="createShortLink()">
+    <input type="text" placeholder="Original URL" name="originalUrl" [(ngModel)]="originalUrl" required>
+    <button type="submit">Shorten URL</button>
+  </form>
+  <div *ngIf="shortLink" class="copy-con">
+    <p id="textToCopy">{{ shortLink }}</p>
+    <button (click)="copyText()">Copy</button>
+  </div>
+
+  <div class="card-con">
+    <div class="card-con-left">
+      <h3>Take your business to the next level!</h3>
+      <p>Want to brand your short links and get detailed analytics? Get Sort URL for your business and super-charge your link management.</p>
+      <button><a routerLink="/register">Get Started</a></button>
+    </div>
+    <div class="card-con-right">
+      <img [src]="imagePath" alt="">
+    </div>
+  </div>
+  
+</div>

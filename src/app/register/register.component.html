@@ -1,0 +1,22 @@
+<div class="reg">
+  <form (ngSubmit)="register()">
+    <h2>Register </h2>
+
+    <label for="name">Name</label>
+    <input type="text" placeholder="Name" id="name"  name="name" [(ngModel)]="name" required>
+  
+    <label for="username">Username</label>
+    <input type="text" placeholder="username" id="username" name="username" [(ngModel)]="username" required>
+    
+    <label for="email">Email</label>
+    <input type="email" placeholder="Email ID" id="email" name="email" [(ngModel)]="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="password" name="password" [(ngModel)]="password" required>
+  
+    <button type="submit" >Register</button>
+    
+    <br/>
+    <p>if you have an account do <a routerLink="/login">Login</a></p>
+  </form>
+</div>

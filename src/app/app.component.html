@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="nav-container">
+      <h1><a routerLink="/">Short Url</a></h1>
+        <div *ngIf="user_id; else elseBlock" class="nav-right">
+          <!-- <button  routerLink="/create-short-link" routerLinkActive="active">Create Short Link</button> -->
+          <button  routerLink="/analytics" routerLinkActive="active">Analytics</button>
+          <button  (click)="logout()" routerLinkActive="active">Logout</button>
+
+        </div>
+        <ng-template #elseBlock class="nav-right">
+          <div class="nav-right">
+          <button  routerLink="/register" routerLinkActive="active">Register</button>
+          <button  routerLink="/login" routerLinkActive="active">Login</button>
+          </div>
+        </ng-template>
+    </div>
+    <router-outlet></router-outlet>
+    
+</div>

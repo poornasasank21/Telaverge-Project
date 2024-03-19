@@ -1,0 +1,35 @@
+<div class="analytics-container">
+    <h1>Analytics Data</h1>
+    <div class="data-container">
+        <Table >
+            <thead>
+                <tr>
+                    <th>Short URL</th>
+                    <th>Original URL</th>
+                    <th>Expires At</th>
+                    <th>Created At</th>
+                    <th>Analysis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let entry of analyticsData">
+                    <td>/url/{{ entry.short_url }}</td>
+                    <td>{{ entry.original_url }}</td>
+                    <td>{{ entry.expires_at }}</td>
+                    <td>{{ entry.created_at }}</td>
+                    <td><button (click)="openModal(entry.short_url)">Analysis</button></td>
+                    <div #modal [id]="entry.short_url" class="modal">
+                      <div class="modal-content">
+                        <span class="close" (click)="closeModal(entry.short_url)">&times;</span>
+                        <h2>/url/{{ entry.short_url }}</h2>
+                        <ag-charts-angular
+                          style="height: 100%"
+                            [options]="entry.chartOptions">
+                        </ag-charts-angular>
+                      </div>
+                    </div>
+                </tr>
+            </tbody>
+        </Table>
+    </div>    
+</div>

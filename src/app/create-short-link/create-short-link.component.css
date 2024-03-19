@@ -1,0 +1,177 @@
+.create-link-container {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.create-link-container h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.create-link-container p {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+.create-link-container form {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+.create-link-container form input {
+    width: 30%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.create-link-container form button {
+    width: 10%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.create-link-container form button:hover {
+    background-color: #27ae60;
+}
+
+.create-link-container form input:focus {
+    outline: none;
+}
+
+.create-link-container .copy-con {
+    width: 41%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.create-link-container .copy-con p {
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0;
+    /* padding: 1rem; */
+    color: black;
+}
+
+.create-link-container .copy-con button {
+    width: 10%;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.create-link-container .copy-con button:hover {
+    background-color: #27ae60;
+}
+
+.card-con {
+    width: 70%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #196091;
+    border-radius: 10px;   
+}
+
+.card-con-left {
+    width: 50%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: red; */
+
+}
+
+.card-con-left h3 {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: 0;
+    /* padding: 1rem; */
+    color: white;
+}
+
+.card-con-left p {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0;
+    /* padding: 1rem; */
+    /* color: white; */
+    margin-top: 10px;
+}
+
+.card-con-left button {
+    /* width: 10%;
+    height: 2rem; */
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.card-con-left button:hover {
+    background-color: #27ae60;
+}
+
+.card-con-left a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0;
+    /* padding: 1rem; */
+    /* color: white; */
+    margin-top: 10px;
+
+}
+
+.card-con-right {
+    width: 25%;
+    /* background-color: green; */
+}
+
+.card-con-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: -100px;
+}
